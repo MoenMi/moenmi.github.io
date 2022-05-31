@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="clockStyle.css" media="screen" />
+<link rel="icon" href="clock_icon.png" />
+
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <script>
+
+        var time, h, m, s;
+        track = 0;
+        window.onload = function() { setInterval( timeNow, 100); }
+
+        function timeNow() {
+
+            time = new Date();
+            h = time.getHours();
+            m = time.getMinutes();
+            s = time.getSeconds();
+
+            if (m < 10) { m = "0" + m; }
+            if (s < 10) { s = "0" + s; }
+
+            document.getElementById("time").innerHTML = h + ":" + m + ":" + s;
+            document.title = h + ":" + m + ":" + s;
+
+        }
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <span id="time">Time will be displayed here</span>
+    </div>
+</body>
+</html>
