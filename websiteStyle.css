@@ -94,6 +94,31 @@ h4 {
     text-align: center;
 }
 
+.project {
+    width: 250px;
+    display: inline-block;
+    border-width: 2px;
+    border-color:rgb(224, 224, 242);
+    border-style: solid;
+}
+
+.project:hover {
+    opacity: .8;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-title, .project-description {
+    margin: 10px;
+}
+
+.project-image {
+    width: 250px;
+}
+
 #jonah {
     display: block;
     height: auto;
