@@ -28,4 +28,10 @@ function timeNow() {
 
 function change12Hour() {
     twelveHour = !twelveHour;
+    var buttonText = document.getElementById("button", "value");
+    if (twelveHour) {
+        buttonText.setAttribute("value", "Switch to 24-hour");
+    } else {
+        buttonText.setAttribute("value", "Switch to 12-hour");
+    }
 }
