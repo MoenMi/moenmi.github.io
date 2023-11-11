@@ -6,19 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="websiteStyle.css" media="screen" />
     <link rel="icon" href="jonah_window.jpg" />
+    <style>
+        .project {
+            height: 300px;
+            width: 250px;
+            display: inline;
+        }
+
+        .project:hover {
+            opacity: .8;
+        }
+
+        .project-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-title, .project-description {
+            padding: 5px 0px 5px 0px;
+        }
+
+        .project-image {
+            width: 350px;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
         <h1>Michael Moen's Webpage</h1>
         <a class="header-link" href="projects.html">Projects</a>
-        <a class="header-link" href="aboutme.html">About</a>
+        <a class="header-link" href="about.html">About</a>
         <a class="header-link" href="index.html">Home</a>
     </div>
 
+    <h2>Online Content</h2>
+    <ul>
+        <li><a href='https://ualibweb.github.io/UALIB_ScholarlyAPI_Cookbook/content/scripts/python/python_sec_edgar.html' target="_blank">SEC EDGAR API cookbook tutorial in Python</a></li>
+        <li><a href='https://ualibweb.github.io/UALIB_ScholarlyAPI_Cookbook/content/scripts/python/python_ustreasury.html' target="_blank">U.S. Treasury Fiscal Data API cookbook tutorial in Python</a></li>
+        <li><a href='https://ualibweb.github.io/UALIB_ScholarlyAPI_Cookbook/content/scripts/python/python_usaspending.html' target="_blank">USA Spending API cookbook tutorial in Python</a></li>
+        <li><a href='https://github.com/ualibweb/us-government-apis' target="_blank">List of U.S. Government APIs</a></li>
+    </ul>
+
+    <h2>Publications</h2>
+    <ul>
+        <li>Scalfani, V. F., Walker, K. W., Simpson, L., Fernandez, A. M., Patel, V. D., Ramig, A., … Nguyen, A. M. (2023). Creating a Scholarly API Cookbook: Supporting Library Users with Programmatic Access to Information. Issues in Science and Technology Librarianship, (104). https://doi.org/10.29173/istl2766</li>
+    </ul>
+
+    <h2>Coding Projects</h2>
     <div class="project">
         <a class="project-link" href="https://github.com/MoenMi/ConnectFour" target="_blank">
             <h3 class="project-title">Connect Four</h3>
-            <img class="project-image" src="connect_four/connectFour.PNG" />
+            <img class="project-image" src="connect_four/connectFour.PNG" alt="Screenshot of a simple Connect Four game in a computer terminal" />
             <p class="project-description">Basic project of a Connect Four game in terminal using Python.</p>
         </a>
     </div>
@@ -26,16 +64,17 @@
     <div class="project">
         <a class="project-link" href="clock/clock.html" target="_blank">
             <h3 class="project-title">Live Clock</h3>
-            <img class="project-image" src="clock/clock_webpage_image.JPG" />
+            <img class="project-image" src="clock/clock_webpage_image.JPG" alt="Screenshot of a simple clock webpage" />
             <p class="project-description">Basic project implementing a live clock using JavaScript. Dynamic styling based on browser's light or dark mode settings.</p>
         </a>
     </div>
     
     <div class="footer">
-        <a class="social-icon" href="https://www.facebook.com/michaelmoen02/" target="_blank"><img src="icons/facebook_icon.png" /></a>
-        <a class="social-icon" href="https://www.instagram.com/moen_mi/" target="_blank"><img src="icons/instagram_icon.png" /></a>
-        <a class="social-icon" href="https://www.linkedin.com/in/michael-moen-b178391b5/" target="_blank"><img src="icons/linkedin_icon.png" /></a>
-        <a class="social-icon" href="https://github.com/MoenMi" target="_blank"><img src="icons/github_icon.png" /></a>
+        <a class="social-icon" href="https://www.facebook.com/michaelmoen02/" target="_blank"><img src="icons/facebook_icon.png" alt="Facebook icon" /></a>
+        <a class="social-icon" href="https://www.instagram.com/moen_mi/" target="_blank"><img src="icons/instagram_icon.png" alt="Instagram icon" /></a>
+        <a class="social-icon" href="https://www.linkedin.com/in/michael-moen-b178391b5/" target="_blank"><img src="icons/linkedin_icon.png" alt="LinkedIn icon" /></a>
+        <a class="social-icon" href="https://github.com/MoenMi" target="_blank"><img src="icons/github_icon.png" alt="Github icon" /></a>
+        <a class="social-icon" href="https://orcid.org/my-orcid?orcid=0009-0002-3683-9791" target="_blank"><img src="icons/orcid_icon.png" alt="Orcid icon" /></a>
     </div>
 </body>
 </html>
