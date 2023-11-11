@@ -18,14 +18,14 @@ h1 {
 }
 
 h2 {
-    color: rgb(224, 224, 242);
+    color: rgb(162, 169, 255);
     text-align: left;
     text-transform: uppercase;
     padding-top: 5px;
 }
 
 h3 {
-    color: rgb(224, 224, 242);
+    color: rgb(181, 187, 255);
     text-align: left;
     margin-bottom: 0px;
 }
@@ -34,8 +34,8 @@ li {
     padding: 1px 0px;
 }
 
-li > a {
-    color: rgb(163, 163, 245);
+a {
+    color: rgb(186, 235, 255);
 }
 
 .header {
