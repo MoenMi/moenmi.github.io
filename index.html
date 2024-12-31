@@ -19,7 +19,14 @@
     </style>
 </head>
 <body>
-    <div id="header"></div>
+    <div class="header">
+        <h1>Michael Moen</h1>
+        <a class="header-link" href="https://notes.mtmoen.com" target="_blank">Notes</a>
+        <a class="header-link" href="https://resume.mtmoen.com/Michael%20Moen%20-%20Resume.pdf" target="_blank">Resume</a>
+        <a class="header-link" href="publications.html">Projects</a>
+        <a class="header-link" href="about.html">About</a>
+        <a class="header-link" href="index.html">Home</a>
+    </div>
 
     <div id="other">
         <img id="jonah" src="jonah_window.jpg" alt="Stained glass window of Jonah and the Whale" />
@@ -27,16 +34,13 @@
 
     <p style="text-align: center; "><i>This roundel is a reconstruction of a window at the Canterbury Cathedral depicting Jonah being swallowed by the whale. I completed this as part of the Guild of Saint Columbkille at Saint Louis Priory School.</i></p>
 
-    <div id="footer"></div>
+    <div class="footer">
+        <a class="social-icon" href="https://www.facebook.com/mtmoen/" target="_blank"><img src="icons/facebook_icon.png" alt="Facebook" /></a>
+        <a class="social-icon" href="https://www.instagram.com/mtmoen/" target="_blank"><img src="icons/instagram_icon.png" alt="Instagram" /></a>
+        <a class="social-icon" href="https://www.linkedin.com/in/michael-moen-b178391b5/" target="_blank"><img src="icons/linkedin_icon.png" alt="LinkedIn" /></a>
+        <a class="social-icon" href="https://github.com/MoenMi" target="_blank"><img src="icons/github_icon.png" alt="GitHub" /></a>
+        <a class="social-icon" href="https://orcid.org/0009-0002-3683-9791" target="_blank"><img src="icons/orcid_icon.png" alt="ORCID" /></a>
+    </div>
 
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header').innerHTML = data);
-
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer').innerHTML = data);
-    </script>
 </body>
 </html>
