@@ -1,3 +1,3 @@
-A personal website for my digital presence on the internet
+# Personal Website
 
-Includes several personal projects for my portfolio
+A personal website for my digital presence on the internet
