@@ -1,0 +1,15 @@
+.footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.social-icon {
+  margin: 0 10px;
+  filter: invert(100%);
+  display: inline-block;
+  transition: filter 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  filter: invert(70%);
+}
