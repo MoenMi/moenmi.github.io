@@ -1,6 +1,6 @@
 # Personal Website
 
-A personal website for my digital presence on the internet.
+A personal website for my digital presence on the internet. Note that this site is mostly just used as a single source to link to a variety of other semi-professional things related to me around the Internet.
 
 To get set up running the site locally, clone this repo. Then, run the following to install the dependencies.
 
