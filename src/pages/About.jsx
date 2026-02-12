@@ -30,14 +30,6 @@ function About() {
         technology.
       </p>
 
-      <p>
-        Outside of work and school, I enjoy exploring new technologies, tackling
-        side projects, and competing in hackathons—like the time my team won
-        first place for building an AI chatbot to help users save money! I also
-        like to spend time outdoors, watch college football (Roll tide!), and
-        keep up with the latest trends in tech and data science.
-      </p>
-
       <h2>Education</h2>
 
       <h3>B.S. Computer Science</h3>
@@ -94,9 +86,7 @@ function About() {
             Notes
           </a>
         </li>
-        <li>
-          <i>CS 483: Computational Foundations of Machine Learning</i>
-        </li>
+        <li>CS 483: Computational Foundations of Machine Learning</li>
         <li>CS 491: Autonomous Vehicles</li>
         <li>CS 495: Capstone Computing</li>
       </ul>
@@ -119,9 +109,8 @@ function About() {
       </ul>
       <h3>M.S. Applied Statistics</h3>
       <ul>
-        <li>
-          <i>ST 521: Statistical Data Management</i>
-        </li>
+        <li>ST 521: Statistical Data Management</li>
+        <li>ST 522: Advanced Data Management</li>
         <li>
           ST 531: Data Mining I &mdash;{" "}
           <a
@@ -131,9 +120,7 @@ function About() {
             Notes
           </a>
         </li>
-        <li>
-          <i>ST 540: Statistical Programming & Computation with R</i>
-        </li>
+        <li>ST 540: Statistical Programming & Computation with R</li>
         <li>
           ST 552: Applied Regression Analysis &mdash;{" "}
           <a
@@ -161,6 +148,7 @@ function About() {
             Notes
           </a>
         </li>
+        <li>ST 545: Statistical Learning and Data Mining</li>
         <li>
           ST 555: Mathematical Statistics II &mdash;{" "}
           <a
