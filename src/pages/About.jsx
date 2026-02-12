@@ -102,8 +102,15 @@ function About() {
           MATH 311: Introduction to Scientific Computing and Problem Solving
         </li>
         <li>MATH 355: Theory of Probability</li>
+        <li>MATH 420: Linear Optimization Theory</li>
         <li>
-          <i>MATH 420: Linear Optimization Theory</i>
+          MATH 457: Stochastic Processes I &mdash;{" "}
+          <a
+            href="https://notes.mtmoen.com/classes/math457/overview.html"
+            target="_blank"
+          >
+            Notes
+          </a>
         </li>
         <li>MATH 485: Introduction to Complex Variables</li>
       </ul>
