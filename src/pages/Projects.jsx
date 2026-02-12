@@ -17,7 +17,7 @@ function Projects() {
         <li>
           OpenStreetMap Overpass API &mdash;{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/python/osm.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/osm.html"
             target="_blank"
           >
             Python
@@ -26,7 +26,7 @@ function Projects() {
         <li>
           U.S. Bureau of Labor Statistics (BLS) API &mdash;{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/python/bls.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/bls.html"
             target="_blank"
           >
             Python
@@ -35,7 +35,7 @@ function Projects() {
         <li>
           SEC EDGAR API &mdash;{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/python/sec-edgar.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/sec-edgar.html"
             target="_blank"
           >
             Python
@@ -44,14 +44,14 @@ function Projects() {
         <li>
           College Scorecard API &mdash;{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/python/college-scorecard.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/college-scorecard.html"
             target="_blank"
           >
             Python
           </a>
           ,{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/r/college-scorecard.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/r/college-scorecard.html"
             target="_blank"
           >
             R
@@ -60,7 +60,7 @@ function Projects() {
         <li>
           OpenAlex API &mdash;{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/python/openalex.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/openalex.html"
             target="_blank"
           >
             Python
@@ -69,7 +69,7 @@ function Projects() {
         <li>
           Web of Science (WOS) API &mdash;{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/python/wos.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/wos.html"
             target="_blank"
           >
             Python
@@ -78,7 +78,7 @@ function Projects() {
         <li>
           U.S. Treasury Fiscal Data API &mdash;{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/python/us-treasury.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/us-treasury.html"
             target="_blank"
           >
             Python
@@ -87,7 +87,7 @@ function Projects() {
         <li>
           USA Spending API &mdash;{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/python/usa-spending.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/usa-spending.html"
             target="_blank"
           >
             Python
@@ -96,7 +96,7 @@ function Projects() {
         <li>
           National Park Service API &mdash;{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/python/nps.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/nps.html"
             target="_blank"
           >
             Python
@@ -105,7 +105,7 @@ function Projects() {
         <li>
           Speedrun.com API &mdash;{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/python/speedrun.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/speedrun.html"
             target="_blank"
           >
             Python
@@ -114,7 +114,7 @@ function Projects() {
         <li>
           Open Science Framework API &mdash;{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/python/osf.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/osf.html"
             target="_blank"
           >
             Python
@@ -123,7 +123,7 @@ function Projects() {
         <li>
           Research Organization Registry (ROR) API &mdash;{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/python/ror.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/ror.html"
             target="_blank"
           >
             Python
@@ -132,14 +132,14 @@ function Projects() {
         <li>
           Wiley Text and Data Mining API &mdash;{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/python/wiley-tdm.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/wiley-tdm.html"
             target="_blank"
           >
             Python
           </a>
           ,{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/r/wiley-tdm.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/r/wiley-tdm.html"
             target="_blank"
           >
             R
@@ -148,7 +148,7 @@ function Projects() {
         <li>
           U.S. Bureau of Economic Analysis (BEA) API &mdash;{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/python/bea.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/bea.html"
             target="_blank"
           >
             Python
@@ -157,7 +157,7 @@ function Projects() {
         <li>
           National Weather Service (NWS) API &mdash;{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/python/nws.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/nws.html"
             target="_blank"
           >
             Python
@@ -166,7 +166,7 @@ function Projects() {
         <li>
           U.S. Census Geocoding API &mdash;{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/python/us-census-geocoding.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/us-census-geocoding.html"
             target="_blank"
           >
             Python
@@ -175,7 +175,7 @@ function Projects() {
         <li>
           GeoNames API &mdash;{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/python/geonames.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/geonames.html"
             target="_blank"
           >
             Python
@@ -184,7 +184,7 @@ function Projects() {
         <li>
           Elsevier ScienceDirect API &mdash;{" "}
           <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/src/r/sdirect.html"
+            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/r/sdirect.html"
             target="_blank"
           >
             R
