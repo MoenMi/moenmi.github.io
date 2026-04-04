@@ -236,6 +236,11 @@ function About() {
           </a>
         </li>
         <li>
+          <a href="https://www.ryanadolfs.com" target="_blank">
+            ryanadolfs.com
+          </a>
+        </li>
+        <li>
           <a href="https://www.seannotseen.com" target="_blank">
             seannotseen.com
           </a>
