@@ -1,9 +1,203 @@
 import { useEffect } from "react";
 
+const BASE_URL =
+  "https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook";
+
+const cookbookProjects = [
+  {
+    title: "arXiv",
+    links: [{ label: "R", path: "python/arxiv.html" }],
+  },
+  {
+    title: "Bureau of Economic Analysis",
+    links: [{ label: "Python", path: "python/bea.html" }],
+  },
+  {
+    title: "CAS Common Chemistry",
+    links: [
+      { label: "Python", path: "python/casc.html" },
+      { label: "R", path: "r/casc.html" },
+    ],
+  },
+  {
+    title: "College Scorecard",
+    links: [
+      { label: "Python", path: "python/college-scorecard.html" },
+      { label: "R", path: "r/college-scorecard.html" },
+    ],
+  },
+  {
+    title: "Crossref",
+    links: [
+      { label: "Python", path: "python/crossref.html" },
+      { label: "R", path: "r/crossref.html" },
+    ],
+  },
+  {
+    title: "GeoNames",
+    links: [{ label: "Python", path: "python/geonames.html" }],
+  },
+  {
+    title: "Library of Congress",
+    links: [
+      { label: "Python", path: "python/chronam.html" },
+      { label: "R", path: "r/chronam.html" },
+    ],
+  },
+  {
+    title: "National Park Service",
+    links: [{ label: "Python", path: "python/nps.html" }],
+  },
+  {
+    title: "National Weather Service",
+    links: [{ label: "Python", path: "python/nws.html" }],
+  },
+  {
+    title: "OpenAlex",
+    links: [{ label: "Python", path: "python/openalex.html" }],
+  },
+  {
+    title: "OpenStreetMap",
+    links: [{ label: "Python", path: "python/osm.html" }],
+  },
+  {
+    title: "Open Science Framework",
+    links: [{ label: "Python", path: "python/osf.html" }],
+  },
+  {
+    title: "PubChem",
+    links: [
+      { label: "Python", path: "python/pubchem.html" },
+      { label: "R", path: "r/pubchem.html" },
+    ],
+  },
+  {
+    title: "PubMed",
+    links: [
+      { label: "Python", path: "python/pubmed.html" },
+      { label: "R", path: "r/pubmed.html" },
+    ],
+  },
+  {
+    title: "Research Organization Registry",
+    links: [{ label: "Python", path: "python/ror.html" }],
+  },
+  {
+    title: "Sage Journals",
+    links: [
+      { label: "Python", path: "python/sage.html" },
+      { label: "R", path: "r/sage.html" },
+    ],
+  },
+  {
+    title: "SEC EDGAR",
+    links: [
+      { label: "Python", path: "python/sec-edgar.html" },
+      { label: "R", path: "r/sec-edgar.html" },
+    ],
+  },
+  {
+    title: "ScienceDirect",
+    links: [{ label: "R", path: "r/sdirect.html" }],
+  },
+  {
+    title: "Speedrun.com",
+    links: [{ label: "Python", path: "python/speedrun.html" }],
+  },
+  {
+    title: "U.S. Bureau of Labor Statistics",
+    links: [{ label: "Python", path: "python/bls.html" }],
+  },
+  {
+    title: "U.S. Census",
+    links: [
+      { label: "Python", path: "python/us-census.html" },
+      { label: "R", path: "r/us-census.html" },
+    ],
+  },
+  {
+    title: "U.S. Census Geocoding",
+    links: [{ label: "Python", path: "python/us-census-geocoding.html" }],
+  },
+  {
+    title: "U.S. Treasury",
+    links: [{ label: "Python", path: "python/us-treasury.html" }],
+  },
+  {
+    title: "USAspending",
+    links: [
+      { label: "Python", path: "python/usa-spending.html" },
+      { label: "R", path: "r/usa-spending.html" },
+    ],
+  },
+  {
+    title: "Web of Science",
+    links: [{ label: "Python", path: "python/wos.html" }],
+  },
+  {
+    title: "Wiley TDM",
+    links: [
+      { label: "Python", path: "python/wiley-tdm.html" },
+      { label: "R", path: "r/wiley-tdm.html" },
+    ],
+  },
+  {
+    title: "World Bank",
+    links: [
+      { label: "Python", path: "python/world-bank.html" },
+      { label: "R", path: "r/world-bank.html" },
+    ],
+  },
+];
+
+const otherProjects = [
+  {
+    title: "CEO Pay Ratio Website",
+    content: (
+      <p>
+        The{" "}
+        <a href="https://rds.lib.ua.edu/ceo_pay/" target="_blank" rel="noreferrer">
+          CEO Pay Ratio Website
+        </a>{" "}
+        is an online database covering CEO pay data. I developed this website
+        alongside others at the University of Alabama Libraries.
+      </p>
+    ),
+  },
+];
+
+const hackathons = [
+  {
+    title: "UA Innovate 2024: Fintech",
+    description:
+      "Our team created Penny, an application to help users track their spending and make informed financial decisions. We used the OpenAI API to provide users with recommendations on how they can cut spending, save up for a big purchase, or make other important financial decisions. We additionally provided users with visualizations of their spending, so they could further see possible areas where they could cut expenses.",
+  },
+];
+
+function ProjectLinks({ links }) {
+  return (
+    <>
+      {links.map((link, index) => (
+        <span key={link.path}>
+          {index > 0 && " and "}
+          <a
+            href={`${BASE_URL}/${link.path}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {link.label}
+          </a>
+        </span>
+      ))}
+    </>
+  );
+}
+
 function Projects() {
   useEffect(() => {
     document.title = "Projects | Michael Moen";
   }, []);
+
   return (
     <>
       <h2>Scholarly API Cookbook</h2>
@@ -11,360 +205,48 @@ function Projects() {
         As a part of the Research Data Services team at the University of
         Alabama, I have created tutorials for retrieving data from a variety of
         APIs. The tutorials that I have created are all freely available at the
-        links listed below:
+        links listed below and are part of a <a href="https://doi.org/10.29173/istl2766" target="_blank">published journal article</a>.
       </p>
-      <ul>
-        <li>
-          OpenStreetMap Overpass API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/osm.html"
-            target="_blank"
-          >
-            Python
-          </a>
-        </li>
-        <li>
-          Library of Congress API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/chronam.html"
-            target="_blank"
-          >
-            Python
-          </a>,{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/r/chronam.html"
-            target="_blank"
-          >
-            R
-          </a>
-        </li>
-        <li>
-          U.S. Bureau of Labor Statistics (BLS) API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/bls.html"
-            target="_blank"
-          >
-            Python
-          </a>
-        </li>
-        <li>
-          SEC EDGAR API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/sec-edgar.html"
-            target="_blank"
-          >
-            Python
-          </a>,{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/r/sec-edgar.html"
-            target="_blank"
-          >
-            R
-          </a>
-        </li>
-        <li>
-          CAS Common Chemistry API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/casc.html"
-            target="_blank"
-          >
-            Python
-          </a>,{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/r/casc.html"
-            target="_blank"
-          >
-            R
-          </a>
-        </li>
-        <li>
-          College Scorecard API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/college-scorecard.html"
-            target="_blank"
-          >
-            Python
-          </a>
-          ,{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/r/college-scorecard.html"
-            target="_blank"
-          >
-            R
-          </a>
-        </li>
-        <li>
-          World Bank API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/world-bank.html"
-            target="_blank"
-          >
-            Python
-          </a>
-          ,{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/r/world-bank.html"
-            target="_blank"
-          >
-            R
-          </a>
-        </li>
-        <li>
-          PubChem API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/pubchem.html"
-            target="_blank"
-          >
-            Python
-          </a>
-          ,{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/r/pubchem.html"
-            target="_blank"
-          >
-            R
-          </a>
-        </li>
-        <li>
-          PubMed API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/pubmed.html"
-            target="_blank"
-          >
-            Python
-          </a>
-          ,{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/r/pubmed.html"
-            target="_blank"
-          >
-            R
-          </a>
-        </li>
-        <li>
-          OpenAlex API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/openalex.html"
-            target="_blank"
-          >
-            Python
-          </a>
-        </li>
-        <li>
-          Web of Science (WOS) API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/wos.html"
-            target="_blank"
-          >
-            Python
-          </a>
-        </li>
-        <li>
-          U.S. Treasury Fiscal Data API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/us-treasury.html"
-            target="_blank"
-          >
-            Python
-          </a>
-        </li>
-        <li>
-          USA Spending API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/usa-spending.html"
-            target="_blank"
-          >
-            Python
-          </a>,{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/r/usa-spending.html"
-            target="_blank"
-          >
-            R
-          </a>
-        </li>
-        <li>
-          National Park Service API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/nps.html"
-            target="_blank"
-          >
-            Python
-          </a>
-        </li>
-        <li>
-          Speedrun.com API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/speedrun.html"
-            target="_blank"
-          >
-            Python
-          </a>
-        </li>
-        <li>
-          Open Science Framework API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/osf.html"
-            target="_blank"
-          >
-            Python
-          </a>
-        </li>
-        <li>
-          Research Organization Registry (ROR) API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/ror.html"
-            target="_blank"
-          >
-            Python
-          </a>
-        </li>
-        <li>
-          Wiley Text and Data Mining API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/wiley-tdm.html"
-            target="_blank"
-          >
-            Python
-          </a>
-          ,{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/r/wiley-tdm.html"
-            target="_blank"
-          >
-            R
-          </a>
-        </li>
-        <li>
-          U.S. Bureau of Economic Analysis (BEA) API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/bea.html"
-            target="_blank"
-          >
-            Python
-          </a>
-        </li>
-        <li>
-          National Weather Service (NWS) API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/nws.html"
-            target="_blank"
-          >
-            Python
-          </a>
-        </li>
-        <li>
-          U.S. Census Data &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/us-census.html"
-            target="_blank"
-          >
-            Python
-          </a>,{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/r/us-census.html"
-            target="_blank"
-          >
-            R
-          </a>
-        </li>
-        <li>
-          U.S. Census Geocoding API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/us-census-geocoding.html"
-            target="_blank"
-          >
-            Python
-          </a>
-        </li>
-        <li>
-          GeoNames API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/geonames.html"
-            target="_blank"
-          >
-            Python
-          </a>
-        </li>
-        <li>
-          Elsevier ScienceDirect API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/r/sdirect.html"
-            target="_blank"
-          >
-            R
-          </a>
-        </li>
-        <li>
-          Crossref API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/crossref.html"
-            target="_blank"
-          >
-            Python
-          </a>,{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/r/crossref.html"
-            target="_blank"
-          >
-            R
-          </a>
-        </li>
-        <li>
-          Sage Journals API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/python/sage.html"
-            target="_blank"
-          >
-            Python
-          </a>,{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/r/sage.html"
-            target="_blank"
-          >
-            R
-          </a>
-        </li>
-        <li>
-          arXiv API &mdash;{" "}
-          <a
-            href="https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook/r/arxiv.html"
-            target="_blank"
-          >
-            R
-          </a>
-        </li>
+
+      <ul className="tutorial-list">
+        {cookbookProjects.map((project) => (
+          <li key={project.title} className="tutorial-item">
+            <span className="tutorial-title">{project.title}</span>
+            <div className="tutorial-links">
+              {project.links.map((link, index) => (
+                <span key={link.path}>
+                  <a
+                    href={`${BASE_URL}/${link.path}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="tutorial-link"
+                  >
+                    {link.label}
+                  </a>
+                  {index < project.links.length - 1 && ", "}
+                </span>
+              ))}
+            </div>
+          </li>
+        ))}
       </ul>
 
-      <p>
-        Scalfani, V. F., Walker, K. W., Simpson, L., Fernandez, A. M., Patel, V.
-        D., Ramig, A., … Nguyen, A. M. (2023). Creating a Scholarly API
-        Cookbook: Supporting Library Users with Programmatic Access to
-        Information. Issues in Science and Technology Librarianship, (104).
-        https://doi.org/10.29173/istl2766
-      </p>
-
-      <h2>CEO Pay Ratio Website</h2>
-      <p>
-        The{" "}
-        <a href="https://rds.lib.ua.edu/ceo_pay/" target="_blank">
-          CEO Pay Ratio Website
-        </a>{" "}
-        is an online database covering CEO pay data. I developed this website
-        alongside others at the University of Alabama Libraries.
-      </p>
+      {otherProjects.map((project) => (
+        <section key={project.title}>
+          <h2>{project.title}</h2>
+          {project.content}
+        </section>
+      ))}
 
       <h2>Hackathons</h2>
-      <h3>UA Innovate 2024: Fintech</h3>
-      <p>
-        Our team created Penny, an application to help users track their
-        spending and make informed financial decisions. We used the OpenAI API
-        to provide users with recommendations on how they can cut spending, save
-        up for a big purchase, or make other important financial decisions. We
-        additionally provided users with visualizations of their spending, so
-        they could further see possible areas where they could cut expenses.
-      </p>
+      {hackathons.map((hackathon) => (
+        <section key={hackathon.title}>
+          <h3>{hackathon.title}</h3>
+          <p>{hackathon.description}</p>
+        </section>
+      ))}
     </>
   );
 }
+
 export default Projects;
