@@ -24,4 +24,4 @@ To update the site, run the following:
 npm run deploy
 ```
 
-This compiles everything to a static site on the [gh-pages](https://github.com/MoenMi/moenmi.github.io/tree/gh-pages) branch, which hosts the site.
+This compiles everything to a static site on the <a href="https://github.com/MoenMi/moenmi.github.io/tree/gh-pages">gh-pages</a> branch, which hosts the site.

@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 
-const BASE_URL =
-  "https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook";
+const BASE_URL = "https://ua-libraries-research-data-services.github.io/UALIB_ScholarlyAPI_Cookbook";
 
 const cookbookProjects = [
   {
@@ -161,6 +160,21 @@ const otherProjects = [
         </a>{" "}
         is an online database covering CEO pay data. I developed this website
         alongside others at the University of Alabama Libraries.
+      </p>
+    ),
+  },
+  {
+    title: "Employee Review Prediction",
+    content: (
+      <p>
+        The {" "}
+        <a href="https://mtmoen.com/employee-review-prediction/" target="_blank" rel="noreferrer">
+          Employee Review Prediction
+        </a>{" "}
+        service is a basic web application serving a logistic regression model to predict whether
+        Glassdoor reviewers will recommend their company. The back end of this service is built in
+        Python with FastAPI and deployed via Vercel, while the front end is built in HTML, CSS, and
+        JavaScript and deployed via GitHub Pages.
       </p>
     ),
   },
