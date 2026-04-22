@@ -45,16 +45,6 @@ function Navbar() {
                 Resume
               </a>
             </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="https://notes.mtmoen.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Notes
-              </a>
-            </li>
           </ul>
         </div>
       </div>
